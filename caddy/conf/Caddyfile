@@ -27,7 +27,7 @@
 }
 
 rss.matthewrwhalen.com {
-        reverse_proxy 192.168.86.157:8455
+        reverse_proxy freshrss:80
 }
 
 adguard.matthewrwhalen.com {
