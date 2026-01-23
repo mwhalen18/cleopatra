@@ -1,0 +1,31 @@
+{
+
+        email "{$ACME_EMAIL}"
+
+        acme_dns porkbun {
+                api_key "{$PORKBUN_API_KEY}"
+                api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+        }
+
+        log {
+                output stdout
+                level DEBUG
+        }
+}
+
+(internal_service) {
+        @internal {
+                remote_ip 192.168.0.0/16 172.16.0.0/12 10.0.0.0/8
+        }
+
+        handle @internal {
+                reverse_proxy {args[0]}
+        }
+
+        respond 404
+      
+}
+
+rss.matthewrwhalen.com {
+        reverse_proxy 192.168.86.157:8455
+}

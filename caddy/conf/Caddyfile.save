@@ -1,0 +1,94 @@
+{
+
+        email "{$ACME_EMAIL}"
+
+        acme_dns porkbun {
+                api_key "{$PORKBUN_API_KEY}"
+                api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+        }
+
+        log {
+                output stdout
+                level DEBUG
+        }
+}
+
+(internal_service) {
+        @internal {
+                remote_ip 192.168.0.0/16 172.16.0.0/12 10.0.0.0/8
+        }
+
+        handle @internal {
+                reverse_proxy {args[0]}
+        }
+
+        respond 404
+      
+}
+
+rss.matthewrwhalen.com {
+        reverse_proxy 192.168.86.157:8455
+}
+
+adguard.matthewrwhalen.com {
+        reverse_proxy adguardhome:3000
+
+}
+
+wg-easy.matthewrwhalen.com {
+        # since the container will share the network with wg-easy
+        # we can use the proper container name
+        reverse_proxy wg-easy:80
+}
+
+ersatztv.internal.matthewrwhalen.com {
+        reverse_proxy 192.168.86.157:8409
+        
+}
+
+internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service 192.168.86.157:3001
+}
+
+overseerr.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service overseerr:5055
+        
+}
+
+radarr.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service radarr:7878
+        
+}
+
+streaming.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service jellyfin:8096
+        
+}
