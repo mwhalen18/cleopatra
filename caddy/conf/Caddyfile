@@ -29,3 +29,14 @@
 rss.matthewrwhalen.com {
         reverse_proxy 192.168.86.157:8455
 }
+
+adguard.matthewrwhalen.com {
+        reverse_proxy adguard:3000
+
+}
+
+wg-easy.matthewrwhalen.com {
+        # since the container will share the network with wg-easy
+        # we can use the proper container name
+        reverse_proxy wg-easy:80
+}
