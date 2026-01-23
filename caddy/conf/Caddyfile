@@ -64,3 +64,15 @@ streaming.internal.matthewrwhalen.com {
         import internal_service jellyfin:8096
         
 }
+
+ersatztv.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service ersatztv:8409
+        
+}

@@ -1,4 +1,17 @@
 services:
+  ersatztv:
+    image: jasongdove/ersatztv:latest
+    restart: unless-stopped
+    volumes:
+        - '/mnt/ntfs2/Films:/movies:ro'
+        - '${DOCKER_VOLUMES}/ersatztv:/root/.local/share/ersatztv'
+    ports:
+        - '8409:8409'
+    environment:
+        - TZ=America/Chicago
+    container_name: ersatztv
+    networks:
+      caddy:
   flaresolverr:
     image: ghcr.io/flaresolverr/flaresolverr:latest
     container_name: flaresolverr
