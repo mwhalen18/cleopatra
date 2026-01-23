@@ -1,0 +1,124 @@
+services:
+  flaresolverr:
+    image: ghcr.io/flaresolverr/flaresolverr:latest
+    container_name: flaresolverr
+    environment:
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - LOG_HTML=${LOG_HTML:-false}
+      - CAPTCHA_SOLVER=${CAPTCHA_SOLVER:-none}
+      - TZ=Etc/UTC
+    ports:
+      - "${PORT:-8191}:8191"
+    restart: unless-stopped
+    networks:
+      - arr-network
+  jellyfin:
+    image: jellyfin/jellyfin
+    container_name: jellyfin
+    ports:
+      - 8096:8096/tcp
+      - 7359:7359/udp
+    volumes:
+      - ${DOCKER_VOLUMES}/jellyfin/config:/config
+      - ${DOCKER_VOLUMES}/jellyfin/cache:/cache
+      - type: bind
+        source: /mnt/ntfs/Films
+        target: /media/Movies/Volume1
+      - type: bind
+        source: /mnt/ntfs2/Films
+        target: /media/Movies/Volume2
+    restart: 'unless-stopped'
+    networks:
+      arr-network:
+      caddy:
+
+
+  overseerr:
+    image: sctx/overseerr:latest
+    container_name: overseerr
+    environment:
+      - LOG_LEVEL=info
+      - TZ=Etc/UTC
+      - PORT=5055 #optional
+    ports:
+      - 5055:5055
+    volumes:
+      - ${DOCKER_VOLUMES}/overseer/data:/app/config
+    restart: unless-stopped
+    networks:
+      arr-network:
+      caddy:
+  profilarr:
+    image: santiagosayshey/profilarr:latest # Use :beta for early access to new features
+    container_name: profilarr
+    ports:
+      - 6868:6868
+    volumes:
+      - ${DOCKER_VOLUMES}/profilarr/config:/config # Replace with your actual path  
+    restart: unless-stopped
+  
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    volumes:
+      - ${DOCKER_VOLUMES}/prowlarr:/config
+      - /mnt/ntfs/downloads:/data/downloads
+    ports:
+      - 9696:9696
+    restart: unless-stopped
+    networks:
+      - arr-network
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    restart: unless-stopped
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    ports:
+      - 7879:7878
+    volumes:
+      - ${DOCKER_VOLUMES}/radarr:/config
+      - /mnt/ntfs/Films:/movies
+      - /mnt/ntfs/downloads/completed:/data/completed
+      - /mnt/ntfs/downloads/incomplete:/data/incomplete
+    networks:
+      arr-network:
+      caddy:
+
+  transmission:
+    container_name: transmission
+    image: haugene/transmission-openvpn
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "9091:9091"
+      # - "8888:8888" # proxy support
+    volumes:
+      - /mnt/ntfs/downloads:/data
+      - ${DOCKER_VOLUMES}/transmission/data:/config # where transmission-home is stored
+    restart: unless-stopped
+    environment:
+      - OPENVPN_PROVIDER=${OPENVPN_PROVIDER}
+      - OPENVPN_USERNAME=${OPENVPN_USERNAME}
+      - OPENVPN_PASSWORD=${OPENVPN_PASSWORD}
+      - OPENVPN_OPTS=--inactive 3600 --ping 10 --ping-exit 60
+      - OPENVPN_CONFIG=${OPENVPN_CONFIG}
+      - LOCAL_NETWORK=192.168.0.0/16
+      - DISABLE_PORT_UPDATER=true
+    networks:
+      - arr-network
+
+
+networks:
+  arr-network:
+    name: arr-network
+    driver: bridge
+    attachable: true
+  caddy:
+    external: true
