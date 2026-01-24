@@ -1,0 +1,17 @@
+[2026-01-24T03:08:36.846Z] info: kubernetes.yaml was copied to the config folder
+[2026-01-24T03:09:18.987Z] info: docker.yaml was copied to the config folder
+[2026-01-24T03:09:18.988Z] info: services.yaml was copied to the config folder
+[2026-01-24T03:09:18.989Z] info: bookmarks.yaml was copied to the config folder
+[2026-01-24T03:09:18.989Z] info: widgets.yaml was copied to the config folder
+[2026-01-24T03:09:18.989Z] info: custom.css was copied to the config folder
+[2026-01-24T03:09:18.990Z] info: custom.js was copied to the config folder
+[2026-01-24T03:09:19.014Z] info: proxmox.yaml was copied to the config folder
+[2026-01-24T03:16:14.694Z] warn: <resources> Drive not found for target: /mnt/ntfs2
+[2026-01-24T03:16:14.888Z] warn: <resources> Drive not found for target: /mnt/ntfs2
+[2026-01-24T03:16:18.465Z] warn: <resources> Drive not found for target: /mnt/ntfs2
+[2026-01-24T03:16:22.139Z] warn: <resources> Drive not found for target: /mnt/ntfs2
+[2026-01-24T03:16:25.698Z] warn: <resources> Drive not found for target: /mnt/ntfs2
+[2026-01-24T03:16:27.310Z] warn: <resources> Drive not found for target: /mnt/ntfs
+[2026-01-24T03:16:28.093Z] warn: <resources> Drive not found for target: /mnt/ntfs
+[2026-01-24T03:16:31.099Z] warn: <resources> Drive not found for target: /mnt/ntfs
+[2026-01-24T03:16:34.666Z] warn: <resources> Drive not found for target: /mnt/ntfs

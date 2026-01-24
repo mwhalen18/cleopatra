@@ -10,6 +10,10 @@ services:
     environment:
         - TZ=America/Chicago
     container_name: ersatztv
+    labels:
+      - "homepage.group=Media Management"
+      - "homepage.name=Ersatz TV"
+      - "homepage.href=https://ersatztv.internal.matthewrwhalen.com"
     networks:
       caddy:
   flaresolverr:
@@ -47,8 +51,12 @@ services:
     environment:
       TZ: Chicago # CHANGE TO YOUR TIMEZONE
       CRON_MIN: 3,33
+    labels:
+      - "homepage.group=Other Services"
+      - "homepage.name=FreshRSS"
+      - "homepage.href=https://freshrss.matthewrwhalen.com"
   jellyfin:
-    image: jellyfin/jellyfin
+    image: jellyfin/jellyfin:10.10.7
     container_name: jellyfin
     ports:
       - 8096:8096/tcp
@@ -66,6 +74,10 @@ services:
     networks:
       arr-network:
       caddy:
+    labels:
+      - "homepage.group=Media Management"
+      - "homepage.name=Jellyfin"
+      - "homepage.href=https://streaming.internal.matthewrwhalen.com"
 
   overseerr:
     image: sctx/overseerr:latest
@@ -82,6 +94,10 @@ services:
     networks:
       arr-network:
       caddy:
+    labels:
+      - "homepage.group=Media Management"
+      - "homepage.name=Overseerr"
+      - "homepage.href=https://overseerr.internal.matthewrwhalen.com"
   profilarr:
     image: santiagosayshey/profilarr:latest # Use :beta for early access to new features
     container_name: profilarr
@@ -124,6 +140,10 @@ services:
     networks:
       arr-network:
       caddy:
+    labels:
+      - "homepage.group=Media Management"
+      - "homepage.name=Radarr"
+      - "homepage.href=https://radarr.internal.matthewrwhalen.com"
 
   transmission:
     container_name: transmission

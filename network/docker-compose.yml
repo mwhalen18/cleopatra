@@ -49,6 +49,10 @@ services:
             - net.ipv4.ip_forward=1
             - net.ipv4.conf.all.src_valid_mark=1
             # - net.ipv6.conf.all.forwarding=1
+        labels:
+            - "homepage.group=Network Management"
+            - "homepage.name=Wireguard"
+            - "homepage.href=https://wg-easy.matthewrwhalen.com"
     adguard:
         image: adguard/adguardhome:v0.107.64
         depends_on: [caddy]
@@ -65,6 +69,10 @@ services:
             vpn-net:
                 # ipv4_address: 10.2.0.100
             caddy:
+        labels:
+            - "homepage.group=Network Management"
+            - "homepage.name=AdGuard Home"
+            - "homepage.href=https://adguard.matthewrwhalen.com"
 
 networks:
     caddy:

@@ -1,0 +1,11 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/settings/
+title: Cox-Whalen Intranet
+description: This page serves as a hub for internal services on the Cox-Whalen network
+background: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
+
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
