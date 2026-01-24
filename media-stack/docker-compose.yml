@@ -54,7 +54,7 @@ services:
     labels:
       - "homepage.group=Other Services"
       - "homepage.name=FreshRSS"
-      - "homepage.href=https://freshrss.matthewrwhalen.com"
+      - "homepage.href=https://rss.matthewrwhalen.com"
   jellyfin:
     image: jellyfin/jellyfin:10.10.7
     container_name: jellyfin
