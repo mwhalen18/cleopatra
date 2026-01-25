@@ -35,6 +35,11 @@ adguard.matthewrwhalen.com {
 
 }
 
+mealie.matthewrwhalen.com {
+        reverse_proxy mealie:9000
+
+}
+
 wg-easy.matthewrwhalen.com {
         # since the container will share the network with wg-easy
         # we can use the proper container name
@@ -98,4 +103,26 @@ ersatztv.internal.matthewrwhalen.com {
 
         import internal_service ersatztv:8409
         
+}
+
+speedtest.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service speedtest:80
+}
+
+fitness.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service sparkyfitness-frontend:80
 }

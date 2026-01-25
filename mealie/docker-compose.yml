@@ -1,0 +1,30 @@
+services:
+  mealie:
+    image: ghcr.io/mealie-recipes/mealie:v3.9.2 # 
+    container_name: mealie
+    restart: always
+    ports:
+        - "9925:9000" # 
+    deploy:
+      resources:
+        limits:
+          memory: 1000M # 
+    volumes:
+      - ${DOCKER_VOLUMES}/mealie:/app/data/
+    networks:
+      - caddy
+    environment:
+      # Set Backend ENV Variables Here
+      ALLOW_SIGNUP: "false"
+      PUID: 1000
+      PGID: 1000
+      TZ: America/Chicago
+      BASE_URL: https://mealie.matthewrwhalen.com
+    labels:
+      - "homepage.group=Other Services"
+      - "homepage.name=Mealie"
+      - "homepage.href=https://mealie.matthewrwhalen.com"
+
+networks:
+  caddy:
+    external: true

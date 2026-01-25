@@ -1,0 +1,29 @@
+services:
+  speedtest-tracker:
+    image: lscr.io/linuxserver/speedtest-tracker:latest
+    restart: unless-stopped
+    container_name: speedtest
+    ports:
+      - 8180:80
+      - 8443:443
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - APP_KEY=${APP_KEY} # Required
+      - APP_URL=https://speedtest.internal.matthewrwhalen.com # Required
+      - DB_CONNECTION=sqlite
+      - APP_DEBUG=true
+      - SPEEDTEST_SCHEDULE=0 * * * *
+    volumes:
+      - ${DOCKER_VOLUMES}/speedtest/data/data:/config
+      - ${DOCKER_VOLUMES}/speedtest/keys/path/to-custom-ssl-keys:/config/keys
+    networks:
+      caddy:
+    labels:
+      - "homepage.group=Network Management"
+      - "homepage.name=Speedtest"
+      - "homepage.href=https://speedtest.internal.matthewrwhalen.com"
+
+networks:
+  caddy:
+    external: true
