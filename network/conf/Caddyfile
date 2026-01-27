@@ -126,3 +126,8 @@ fitness.internal.matthewrwhalen.com {
 
         import internal_service sparkyfitness-frontend:80
 }
+
+wiki.matthewrwhalen.com {
+
+        reverse_proxy docmost:3000
+}
