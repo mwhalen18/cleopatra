@@ -9,7 +9,7 @@
 
         log {
                 output stdout
-                level INFO
+                level DEBUG
         }
 }
 
@@ -27,11 +27,16 @@
 }
 
 rss.matthewrwhalen.com {
-        reverse_proxy 192.168.86.157:8455
+        reverse_proxy freshrss:80
 }
 
 adguard.matthewrwhalen.com {
-        reverse_proxy adguardhome:3000
+        reverse_proxy adguard:3000
+
+}
+
+mealie.matthewrwhalen.com {
+        reverse_proxy mealie:9000
 
 }
 
@@ -39,11 +44,6 @@ wg-easy.matthewrwhalen.com {
         # since the container will share the network with wg-easy
         # we can use the proper container name
         reverse_proxy wg-easy:80
-}
-
-ersatztv.internal.matthewrwhalen.com {
-        reverse_proxy 192.168.86.157:8409
-        
 }
 
 internal.matthewrwhalen.com {
@@ -54,19 +54,7 @@ internal.matthewrwhalen.com {
                 }
         }
 
-        import internal_service 192.168.86.157:3001
-}
-
-overseerr.internal.matthewrwhalen.com {
-        tls {
-                dns porkbun {
-                        api_key "{$PORKBUN_API_KEY}"
-                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
-                }
-        }
-
-        import internal_service overseerr:5055
-        
+        import internal_service homepage:3000
 }
 
 radarr.internal.matthewrwhalen.com {
@@ -91,4 +79,59 @@ streaming.internal.matthewrwhalen.com {
 
         import internal_service jellyfin:8096
         
+}
+
+overseerr.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service overseerr:5055
+        
+}
+
+ersatztv.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service ersatztv:8409
+        
+}
+
+speedtest.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service speedtest:80
+}
+
+fitness.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service sparkyfitness-frontend:80
+}
+
+wiki.matthewrwhalen.com {
+
+        reverse_proxy docmost:3000
+}
+
+photos.matthewrwhalen.com {
+        reverse_proxy immich_server:2283
 }

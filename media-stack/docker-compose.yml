@@ -16,6 +16,7 @@ services:
       - "homepage.href=https://ersatztv.internal.matthewrwhalen.com"
     networks:
       caddy:
+      arr-network:
   flaresolverr:
     image: ghcr.io/flaresolverr/flaresolverr:latest
     container_name: flaresolverr
@@ -64,6 +65,7 @@ services:
     volumes:
       - ${DOCKER_VOLUMES}/jellyfin/config:/config
       - ${DOCKER_VOLUMES}/jellyfin/cache:/cache
+      - ${DOCKER_VOLUMES}/jellyfin/custom_assets:/jellyfin/jellyfin-web/custom_assets:ro
       - type: bind
         source: /mnt/ntfs/Films
         target: /media/Movies/Volume1
@@ -106,6 +108,8 @@ services:
     volumes:
       - ${DOCKER_VOLUMES}/profilarr/config:/config # Replace with your actual path  
     restart: unless-stopped
+    networks:
+      - arr-network
   
   prowlarr:
     image: lscr.io/linuxserver/prowlarr:latest

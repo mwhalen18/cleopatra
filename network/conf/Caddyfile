@@ -131,3 +131,7 @@ wiki.matthewrwhalen.com {
 
         reverse_proxy docmost:3000
 }
+
+photos.matthewrwhalen.com {
+        reverse_proxy immich_server:2283
+}
