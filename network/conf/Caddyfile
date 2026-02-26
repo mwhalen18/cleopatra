@@ -69,6 +69,19 @@ radarr.internal.matthewrwhalen.com {
         
 }
 
+sonarr.internal.matthewrwhalen.com {
+        tls {
+                dns porkbun {
+                        api_key "{$PORKBUN_API_KEY}"
+                        api_secret_key "{$PORKBUN_SECRET_API_KEY}"
+                }
+        }
+
+        import internal_service sonarr:8989
+        
+}
+
+
 streaming.internal.matthewrwhalen.com {
         tls {
                 dns porkbun {
@@ -134,4 +147,8 @@ wiki.matthewrwhalen.com {
 
 photos.matthewrwhalen.com {
         reverse_proxy immich_server:2283
+}
+
+cloud.matthewrwhalen.com {
+        reverse_proxy nextcloud-aio-apache:11000
 }
