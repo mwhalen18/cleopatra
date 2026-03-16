@@ -20,3 +20,7 @@ services:
     restart: unless-stopped
     ports:
       - 9898:9898
+    labels:
+      - "homepage.group=Other Services"
+      - "homepage.name=Backrest"
+      - "homepage.href=http://192.168.86.157:9898/"

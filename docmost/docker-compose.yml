@@ -14,7 +14,7 @@ services:
       - "3002:3000"
     restart: unless-stopped
     volumes:
-      - ${DOCKER_VOLUMES}/docmost:/app/data/storage
+      - ${DOCKER_VOLUMES}/docmost/storage:/app/data/storage
     networks:
       caddy:
       docmost:
@@ -31,7 +31,7 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     restart: unless-stopped
     volumes:
-      - ${DOCKER_VOLUMES}/docmost:/var/lib/postgresql/data
+      - ${DOCKER_VOLUMES}/docmost/db:/var/lib/postgresql/data
     networks: 
       docmost:
 
@@ -39,15 +39,10 @@ services:
     image: redis:7.2-alpine
     restart: unless-stopped
     volumes:
-      - ${DOCKER_VOLUMES}/docmost:/data
+      - ${DOCKER_VOLUMES}/docmost/redis:/data
     networks:
       docmost:
-
-volumes:
-  docmost:
-  db_data:
-  redis_data:
-
+      
 networks:
   docmost:
     name: docmost

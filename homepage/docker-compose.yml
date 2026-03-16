@@ -1,6 +1,7 @@
 services:
   homepage:
     image: ghcr.io/gethomepage/homepage:latest
+    restart: unless-stopped
     container_name: homepage
     ports:
       - 3001:3000
@@ -10,7 +11,7 @@ services:
     networks:
       caddy:
     environment:
-      HOMEPAGE_ALLOWED_HOSTS: cleopatra:3001,localhost:3001,127.0.0.1:3001,internal.matthewrwhalen.com
+      HOMEPAGE_ALLOWED_HOSTS: cleopatra:3001,localhost:3001,127.0.0.1:3001,internal.matthewrwhalen.com,192.168.86.157:3001
 
 networks:
   caddy:

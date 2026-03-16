@@ -80,7 +80,9 @@ services:
       - "homepage.group=Media Management"
       - "homepage.name=Jellyfin"
       - "homepage.href=https://streaming.internal.matthewrwhalen.com"
-
+      - homepage.widget.type=jellyfin
+      - homepage.widget.url=https://streaming.internal.matthewrwhalen.com
+      - homepage.widget.key=${JELLYFIN_API_KEY}
   overseerr:
     image: sctx/overseerr:latest
     container_name: overseerr
@@ -148,6 +150,9 @@ services:
       - "homepage.group=Media Management"
       - "homepage.name=Radarr"
       - "homepage.href=https://radarr.internal.matthewrwhalen.com"
+      - homepage.widget.type=radarr
+      - homepage.widget.url=https://radarr.internal.matthewrwhalen.com
+      - homepage.widget.key=${RADARR_API_KEY}
   sonarr:
     image: lscr.io/linuxserver/sonarr:latest
     container_name: sonarr

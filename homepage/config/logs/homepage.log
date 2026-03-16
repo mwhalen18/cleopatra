@@ -15,3 +15,836 @@
 [2026-01-24T03:16:28.093Z] warn: <resources> Drive not found for target: /mnt/ntfs
 [2026-01-24T03:16:31.099Z] warn: <resources> Drive not found for target: /mnt/ntfs
 [2026-01-24T03:16:34.666Z] warn: <resources> Drive not found for target: /mnt/ntfs
+[2026-02-26T14:43:57.999Z] error: Failed to load services.yaml, please check for errors
+[2026-02-26T14:43:58.002Z] error: TypeError: Cannot read properties of null (reading 'forEach')
+[2026-02-26T14:43:58.227Z] error: Failed to load services.yaml, please check for errors
+[2026-02-26T14:43:58.227Z] error: TypeError: Cannot read properties of null (reading 'forEach')
+[2026-02-26T14:43:59.543Z] error: Failed to load services.yaml, please check for errors
+[2026-02-26T14:43:59.543Z] error: TypeError: Cannot read properties of null (reading 'forEach')
+[2026-02-26T14:44:08.942Z] error: Failed to load services.yaml, please check for errors
+[2026-02-26T14:44:08.942Z] error: TypeError: Cannot read properties of null (reading 'forEach')
+[2026-02-26T14:45:12.294Z] warn: <service-helpers> Error parsing service "Service 1" from config. Ensure required fields are present.
+[2026-02-26T14:45:12.322Z] warn: <service-helpers> Error parsing service "Service 1" from config. Ensure required fields are present.
+[2026-02-26T14:45:12.658Z] warn: <service-helpers> Error parsing service "Service 1" from config. Ensure required fields are present.
+[2026-02-26T14:45:15.684Z] warn: <service-helpers> Error parsing service "Service 1" from config. Ensure required fields are present.
+[2026-02-26T14:45:29.655Z] warn: <service-helpers> Error parsing service "Service 1" from config. Ensure required fields are present.
+[2026-02-26T14:45:30.608Z] warn: <service-helpers> Error parsing service "Service 1" from config. Ensure required fields are present.
+[2026-02-26T14:46:58.627Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.635Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.637Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.641Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.642Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.643Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.645Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.646Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.647Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.649Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.650Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.652Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.653Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.656Z] error: <dockerStatusService> TypeError: Cannot read properties of null (reading 'my-docker-instance')
+    at k (/app/.next/server/chunks/7655.js:1:3135)
+    at j (/app/.next/server/pages/api/docker/status/[...service].js:1:405)
+    at ts (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:100934)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async to.render (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:1:101643)
+    at async Module.m (/app/.next/server/pages/api/docker/status/[...service].js:1:5881)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:766:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:390:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:916:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.5.9_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:240:21)
+[2026-02-26T14:46:58.658Z] warn: <service-helpers> Error parsing service "Service 1" from config. Ensure required fields are present.
+[2026-02-26T14:46:58.750Z] warn: <service-helpers> Error parsing service "Service 1" from config. Ensure required fields are present.
+[2026-02-26T14:46:59.361Z] warn: <service-helpers> Error parsing service "Service 1" from config. Ensure required fields are present.
+[2026-02-26T14:47:06.363Z] warn: <service-helpers> Error parsing service "Service 1" from config. Ensure required fields are present.
+[2026-02-26T14:47:43.710Z] warn: <service-helpers> Error parsing service "Sonarr" from config. Ensure required fields are present.
+[2026-02-26T14:47:43.905Z] warn: <service-helpers> Error parsing service "Sonarr" from config. Ensure required fields are present.
+[2026-02-26T14:47:45.019Z] warn: <service-helpers> Error parsing service "Sonarr" from config. Ensure required fields are present.
+[2026-02-26T14:48:07.425Z] warn: <service-helpers> Error parsing service "Sonarr" from config. Ensure required fields are present.
+[2026-02-26T14:48:24.072Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue...
+[2026-02-26T14:48:24.078Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:24.083Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/wanted/missing...
+[2026-02-26T14:48:24.083Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:24.101Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/series...
+[2026-02-26T14:48:24.102Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:24.125Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue/details...
+[2026-02-26T14:48:24.125Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:24.133Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/status...
+[2026-02-26T14:48:24.133Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:24.144Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/details...
+[2026-02-26T14:48:24.145Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:24.199Z] error: <httpProxy> Error calling http://radarr.host/api/v3/movie...
+[2026-02-26T14:48:24.199Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:32.890Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/series...
+[2026-02-26T14:48:32.891Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:32.892Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue...
+[2026-02-26T14:48:32.892Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:32.982Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue/details...
+[2026-02-26T14:48:32.983Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:32.998Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/wanted/missing...
+[2026-02-26T14:48:32.998Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:33.101Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/details...
+[2026-02-26T14:48:33.101Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:33.106Z] error: <httpProxy> Error calling http://radarr.host/api/v3/movie...
+[2026-02-26T14:48:33.106Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:33.214Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/status...
+[2026-02-26T14:48:33.215Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:37.768Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/wanted/missing...
+[2026-02-26T14:48:37.769Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:37.779Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue/details...
+[2026-02-26T14:48:37.780Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:37.930Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue...
+[2026-02-26T14:48:37.931Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:37.956Z] error: <httpProxy> Error calling http://radarr.host/api/v3/movie...
+[2026-02-26T14:48:37.956Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:38.114Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/status...
+[2026-02-26T14:48:38.114Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:38.139Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/details...
+[2026-02-26T14:48:38.140Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:38.283Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/series...
+[2026-02-26T14:48:38.284Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:54.164Z] error: <httpProxy> Error calling http://radarr.host/api/v3/movie...
+[2026-02-26T14:48:54.165Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:54.263Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/wanted/missing...
+[2026-02-26T14:48:54.264Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:54.281Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/series...
+[2026-02-26T14:48:54.281Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:54.390Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue...
+[2026-02-26T14:48:54.390Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:54.396Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/details...
+[2026-02-26T14:48:54.396Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:54.523Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue/details...
+[2026-02-26T14:48:54.524Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:54.535Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/status...
+[2026-02-26T14:48:54.536Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:55.107Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/series...
+[2026-02-26T14:48:55.107Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:55.109Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue/details...
+[2026-02-26T14:48:55.110Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:55.301Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue...
+[2026-02-26T14:48:55.302Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:55.303Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/wanted/missing...
+[2026-02-26T14:48:55.303Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:48:57.913Z] error: <httpProxy> Error calling http://radarr.host/api/v3/movie...
+[2026-02-26T14:48:57.913Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:57.936Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/status...
+[2026-02-26T14:48:57.936Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:48:58.036Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/details...
+[2026-02-26T14:48:58.036Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:49:24.449Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/wanted/missing...
+[2026-02-26T14:49:24.450Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:24.451Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue...
+[2026-02-26T14:49:24.452Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:24.631Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/details...
+[2026-02-26T14:49:24.631Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:49:24.632Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/series...
+[2026-02-26T14:49:24.632Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:24.807Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue/details...
+[2026-02-26T14:49:24.807Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:24.810Z] error: <httpProxy> Error calling http://radarr.host/api/v3/movie...
+[2026-02-26T14:49:24.811Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:49:25.421Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/status...
+[2026-02-26T14:49:25.421Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:49:25.560Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/status...
+[2026-02-26T14:49:25.560Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:49:25.561Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/wanted/missing...
+[2026-02-26T14:49:25.561Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:25.818Z] error: <httpProxy> Error calling http://radarr.host/api/v3/movie...
+[2026-02-26T14:49:25.818Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:49:25.819Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue...
+[2026-02-26T14:49:25.819Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:25.968Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue/details...
+[2026-02-26T14:49:25.968Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:25.969Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/series...
+[2026-02-26T14:49:25.969Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:26.524Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/details...
+[2026-02-26T14:49:26.524Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:49:41.517Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue/details...
+[2026-02-26T14:49:41.518Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:41.536Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/queue...
+[2026-02-26T14:49:41.536Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:41.559Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/series...
+[2026-02-26T14:49:41.559Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:41.580Z] error: <httpProxy> Error calling http://sonarr.host/api/v3/wanted/missing...
+[2026-02-26T14:49:41.581Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND sonarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'sonarr.host'
+  }
+]
+[2026-02-26T14:49:41.638Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/status...
+[2026-02-26T14:49:41.638Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:49:41.639Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/details...
+[2026-02-26T14:49:41.640Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:49:41.710Z] error: <httpProxy> Error calling http://radarr.host/api/v3/movie...
+[2026-02-26T14:49:41.710Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:50:00.257Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/status...
+[2026-02-26T14:50:00.257Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:50:00.277Z] error: <httpProxy> Error calling http://radarr.host/api/v3/movie...
+[2026-02-26T14:50:00.277Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:50:00.304Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/details...
+[2026-02-26T14:50:00.304Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:50:00.392Z] error: <httpProxy> Error calling http://radarr.host/api/v3/movie...
+[2026-02-26T14:50:00.393Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:50:00.398Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/status...
+[2026-02-26T14:50:00.398Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:50:00.422Z] error: <httpProxy> Error calling http://radarr.host/api/v3/queue/details...
+[2026-02-26T14:50:00.422Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo ENOTFOUND radarr.host] {
+    errno: -3008,
+    code: 'ENOTFOUND',
+    syscall: 'getaddrinfo',
+    hostname: 'radarr.host'
+  }
+]
+[2026-02-26T14:52:47.083Z] error: undefined
+[2026-02-26T14:52:47.085Z] error: undefined
+[2026-02-26T14:52:47.086Z] error: undefined
+[2026-02-26T14:52:52.131Z] error: undefined
+[2026-02-26T14:52:57.593Z] error: undefined
+[2026-02-26T14:52:57.596Z] error: undefined
+[2026-02-26T14:53:12.191Z] error: undefined
+[2026-02-26T14:53:17.674Z] error: undefined
+[2026-02-26T14:53:17.676Z] error: undefined
+[2026-02-26T14:53:36.518Z] error: undefined
+[2026-02-26T14:53:36.526Z] error: undefined
+[2026-02-26T14:53:36.533Z] error: undefined
+[2026-02-26T14:54:02.768Z] error: undefined
+[2026-02-26T14:54:07.884Z] error: undefined
+[2026-02-26T14:54:07.886Z] error: undefined
+[2026-02-26T15:13:21.449Z] error: undefined
+[2026-02-26T15:13:21.450Z] error: undefined
+[2026-02-26T15:13:26.578Z] error: undefined
+[2026-02-26T15:13:31.617Z] error: undefined
+[2026-03-03T18:50:10.241Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.340Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.345Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.347Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.351Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.352Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.359Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.361Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.364Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.367Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.373Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:10.375Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:51.146Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:50:51.149Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:51:25.818Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:51:25.821Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:51:36.764Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.
+[2026-03-03T18:51:36.768Z] error: Host validation failed for: 192.168.86.157:3001. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.

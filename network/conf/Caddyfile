@@ -9,7 +9,7 @@
 
         log {
                 output stdout
-                level DEBUG
+                level INFO
         }
 }
 
