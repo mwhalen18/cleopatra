@@ -33,9 +33,6 @@ services:
 
   freshrss:
     image: freshrss/freshrss:latest
-    build:
-      context: https://github.com/FreshRSS/FreshRSS.git#latest
-      dockerfile: Docker/Dockerfile-Alpine
     container_name: freshrss
     hostname: freshrss
     restart: unless-stopped
@@ -43,8 +40,8 @@ services:
       options:
         max-size: 10m
     volumes:
-      - ${DOCKER_VOLUMES}/freshrss/data:/config
-      - ${DOCKER_VOLUMES}/freshrss/extensions:/extensions
+      - ${DOCKER_VOLUMES}/freshrss/data:/var/www/FreshRSS/data
+      - ${DOCKER_VOLUMES}/freshrss/extensions:/var/www/FreshRSS/extensions
     ports:
       - "8455:80"
     networks:
@@ -65,6 +62,7 @@ services:
     volumes:
       - ${DOCKER_VOLUMES}/jellyfin/config:/config
       - ${DOCKER_VOLUMES}/jellyfin/cache:/cache
+      - ${DOCKER_VOLUMES}/jellyfin/custom_collections:/custom_collections
       - ${DOCKER_VOLUMES}/jellyfin/custom_assets:/jellyfin/jellyfin-web/custom_assets:ro
       - type: bind
         source: /mnt/ntfs/Films

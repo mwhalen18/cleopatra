@@ -1,0 +1,81 @@
+services:
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    container_name: mlflow
+    depends_on:
+      - postgres
+      - minio
+    ports:
+      - "5001:5000"
+    environment:
+      MLFLOW_S3_ENDPOINT_URL: http://minio:9000
+      AWS_ACCESS_KEY_ID: minio
+      AWS_SECRET_ACCESS_KEY: minio123
+      MLFLOW_SERVER_CORS_ALLOWED_ORIGINS: "https://${DOMAIN_NAME}"
+      MLFLOW_UC_INTERNAL_DISABLE_CORS_CHECK: "true"
+    command: >
+      mlflow server
+      --backend-store-uri postgresql://mlflow:mlflow@postgres:5432/mlflow
+      --artifacts-destination s3://mlflow
+      --serve-artifacts
+      --allowed-hosts mlflow.internal.${DOMAIN_NAME}
+      --cors-allowed-origins https://mlflow.internal.${DOMAIN_NAME}
+      --host 0.0.0.0
+      --port 5000
+    networks:
+      mlflow-network:
+      caddy:
+    labels:
+      - "homepage.group=Other Services"
+      - "homepage.name=MLFLow"
+      - "homepage.href=https://mlflow.internal.${DOMAIN_NAME}"
+
+  postgres:
+    image: postgres:15
+    container_name: mlflow-postgres
+    environment:
+      POSTGRES_USER: mlflow
+      POSTGRES_PASSWORD: mlflow
+      POSTGRES_DB: mlflow
+    volumes:
+      - ${DOCKER_VOLUMES}/mlflow/postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks: 
+      - mlflow-network
+
+  minio:
+    image: minio/minio:latest
+    container_name: mlflow-minio
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: minio123
+    volumes:
+      - ${DOCKER_VOLUMES}/minio_data:/data
+    networks: 
+      - mlflow-network
+
+  minio-init:
+    image: minio/mc
+    depends_on:
+      - minio
+    entrypoint: >
+      /bin/sh -c "
+      sleep 5;
+      mc alias set local http://minio:9000 minio minio123;
+      mc mb local/mlflow;
+      exit 0;
+      "
+    networks: 
+      - mlflow-network
+
+networks:
+  mlflow-network:
+    name: mlflow-network
+    driver: bridge
+    attachable: true
+  caddy:
+    external: true

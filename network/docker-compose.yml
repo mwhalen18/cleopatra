@@ -21,6 +21,8 @@ services:
             - ./site:/srv
             - ${DOCKER_VOLUMES}/caddy/data:/data
             - ${DOCKER_VOLUMES}/caddy/caddy_config:/config
+        environment:
+            - DOMAIN_NAME=${DOMAIN_NAME}
         # dns:
         #   - 1.1.1.1
     wg-easy:
@@ -52,7 +54,7 @@ services:
         labels:
             - "homepage.group=Network Management"
             - "homepage.name=Wireguard"
-            - "homepage.href=https://wg-easy.matthewrwhalen.com"
+            - "homepage.href=https://wg-easy.${DOMAIN_NAME}"
     adguard:
         image: adguard/adguardhome:v0.107.64
         depends_on: [caddy]
@@ -72,7 +74,28 @@ services:
         labels:
             - "homepage.group=Network Management"
             - "homepage.name=AdGuard Home"
-            - "homepage.href=https://adguard.matthewrwhalen.com"
+            - "homepage.href=https://adguard.${DOMAIN_NAME}"
+
+    authelia:
+        image: docker.io/authelia/authelia:latest
+        container_name: authelia
+        restart: unless-stopped
+        networks:
+            - caddy
+        volumes:
+            - ${DOCKER_VOLUMES}/authelia/config:/config
+        environment:
+            AUTHELIA_IDENTITY_VALIDATION_RESET_PASSWORD_JWT_SECRET_FILE: '/run/secrets/JWT_SECRET'
+            AUTHELIA_SESSION_SECRET_FILE: '/run/secrets/SESSION_SECRET'
+            # AUTHELIA_STORAGE_POSTGRES_PASSWORD_FILE: '/run/secrets/STORAGE_PASSWORD'
+            AUTHELIA_STORAGE_ENCRYPTION_KEY_FILE: '/run/secrets/STORAGE_ENCRYPTION_KEY'
+        secrets: # This block is REQUIRED to "mount" the secrets into the container
+            - JWT_SECRET
+            - SESSION_SECRET
+            - STORAGE_ENCRYPTION_KEY
+        command: >
+            authelia
+            --config /config/configuration.yml
 
 networks:
     caddy:
@@ -83,3 +106,13 @@ networks:
     vpn-net:
         name: vpn-net
         driver: bridge
+
+secrets:
+    JWT_SECRET:
+        file: '/home/mwhalen18/.local/share/docker/network/data/authelia/secrets/JWT_SECRET'
+    SESSION_SECRET:
+        file: '//home/mwhalen18/.local/share/docker/network/data/authelia/secrets/SESSION_SECRET'
+    STORAGE_PASSWORD:
+        file: '/home/mwhalen18/.local/share/docker/network/data/authelia/secrets/STORAGE_PASSWORD'
+    STORAGE_ENCRYPTION_KEY:
+        file: '/home/mwhalen18/.local/share/docker/network/data/authelia/secrets/STORAGE_ENCRYPTION_KEY'

@@ -6,7 +6,7 @@ services:
       - db
       - redis
     environment:
-      APP_URL: 'https://wiki.matthewrwhalen.com'
+      APP_URL: 'https://wiki.${DOMAIN_NAME}'
       APP_SECRET: ${APP_SECRET}
       DATABASE_URL: 'postgresql://docmost:${DB_PASSWORD}@db:5432/docmost?schema=public'
       REDIS_URL: 'redis://redis:6379'

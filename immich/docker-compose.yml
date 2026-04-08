@@ -36,7 +36,7 @@ services:
     labels:
       - "homepage.group=Other Services"
       - "homepage.name=Immich"
-      - "homepage.href=https://photos.matthewrwhalen.com"
+      - "homepage.href=https://photos.${DOMAIN_NAME}"
 
   immich-machine-learning:
     container_name: immich_machine_learning

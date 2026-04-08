@@ -26,27 +26,40 @@
       
 }
 
-rss.matthewrwhalen.com {
+# Global Authelia snippet
+(authelia_auth) {
+    forward_auth authelia:9091 {
+        uri /api/authz/forward-auth
+        copy_headers Remote-User Remote-Groups Remote-Name Remote-Email
+    }
+}
+
+# Authelia Portal
+auth.{$DOMAIN_NAME} {
+    reverse_proxy authelia:9091
+}
+
+rss.{$DOMAIN_NAME} {
         reverse_proxy freshrss:80
 }
 
-adguard.matthewrwhalen.com {
+adguard.{$DOMAIN_NAME} {
         reverse_proxy adguard:3000
 
 }
 
-mealie.matthewrwhalen.com {
+mealie.{$DOMAIN_NAME} {
         reverse_proxy mealie:9000
 
 }
 
-wg-easy.matthewrwhalen.com {
+wg-easy.{$DOMAIN_NAME} {
         # since the container will share the network with wg-easy
         # we can use the proper container name
         reverse_proxy wg-easy:80
 }
 
-internal.matthewrwhalen.com {
+internal.{$DOMAIN_NAME} {
         tls {
                 dns porkbun {
                         api_key "{$PORKBUN_API_KEY}"
@@ -57,7 +70,7 @@ internal.matthewrwhalen.com {
         import internal_service homepage:3000
 }
 
-radarr.internal.matthewrwhalen.com {
+radarr.internal.{$DOMAIN_NAME} {
         tls {
                 dns porkbun {
                         api_key "{$PORKBUN_API_KEY}"
@@ -69,7 +82,7 @@ radarr.internal.matthewrwhalen.com {
         
 }
 
-sonarr.internal.matthewrwhalen.com {
+sonarr.internal.{$DOMAIN_NAME} {
         tls {
                 dns porkbun {
                         api_key "{$PORKBUN_API_KEY}"
@@ -82,7 +95,7 @@ sonarr.internal.matthewrwhalen.com {
 }
 
 
-streaming.internal.matthewrwhalen.com {
+streaming.internal.{$DOMAIN_NAME} {
         tls {
                 dns porkbun {
                         api_key "{$PORKBUN_API_KEY}"
@@ -94,7 +107,7 @@ streaming.internal.matthewrwhalen.com {
         
 }
 
-overseerr.internal.matthewrwhalen.com {
+overseerr.internal.{$DOMAIN_NAME} {
         tls {
                 dns porkbun {
                         api_key "{$PORKBUN_API_KEY}"
@@ -106,7 +119,7 @@ overseerr.internal.matthewrwhalen.com {
         
 }
 
-ersatztv.internal.matthewrwhalen.com {
+ersatztv.internal.{$DOMAIN_NAME} {
         tls {
                 dns porkbun {
                         api_key "{$PORKBUN_API_KEY}"
@@ -118,7 +131,7 @@ ersatztv.internal.matthewrwhalen.com {
         
 }
 
-speedtest.internal.matthewrwhalen.com {
+speedtest.internal.{$DOMAIN_NAME} {
         tls {
                 dns porkbun {
                         api_key "{$PORKBUN_API_KEY}"
@@ -129,7 +142,27 @@ speedtest.internal.matthewrwhalen.com {
         import internal_service speedtest:80
 }
 
-fitness.internal.matthewrwhalen.com {
+
+wiki.{$DOMAIN_NAME} {
+        import authelia_auth
+        reverse_proxy docmost:3000
+}
+
+photos.{$DOMAIN_NAME} {
+        reverse_proxy immich_server:2283
+}
+
+cloud.{$DOMAIN_NAME} {
+        reverse_proxy nextcloud-aio-apache:11000
+}
+
+fitness.{$DOMAIN_NAME} {
+        reverse_proxy sparkyfitness-frontend:80
+}
+
+mlflow.internal.{$DOMAIN_NAME} {
+        import authelia_auth
+
         tls {
                 dns porkbun {
                         api_key "{$PORKBUN_API_KEY}"
@@ -137,18 +170,5 @@ fitness.internal.matthewrwhalen.com {
                 }
         }
 
-        import internal_service sparkyfitness-frontend:80
-}
-
-wiki.matthewrwhalen.com {
-
-        reverse_proxy docmost:3000
-}
-
-photos.matthewrwhalen.com {
-        reverse_proxy immich_server:2283
-}
-
-cloud.matthewrwhalen.com {
-        reverse_proxy nextcloud-aio-apache:11000
+        import internal_service mlflow:5000
 }
